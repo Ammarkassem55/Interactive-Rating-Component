@@ -1,0 +1,119 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: black;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container {
+  background-color: #212730;
+  position: relative;
+  padding-top: 20px;
+  margin: 20px auto;
+  width: 245px;
+  height: 225px;
+  /* text-align: center; */
+  border-radius: 20px;
+  /* display: flex;
+  align-items: center; */
+}
+.container .icon {
+  background-color: #292f38;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 50%;
+}
+.container i {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  left: 5px;
+  color: #fb7519;
+  top: 5px;
+}
+.container #text {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.container #text h2 {
+  color: white;
+  padding-top: 5px;
+}
+.container #text p {
+  color: #474e57;
+  margin: 0 0 10px 0;
+}
+.container .rate-numbers {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  position: relative;
+}
+.container .rate-numbers span {
+  display: flex;
+  color: white;
+  opacity: 0.5;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #292f38;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.container .rate-numbers span:hover {
+  opacity: 1;
+  color: #212730;
+  background-color: #fb7519;
+}
+.container .rate-numbers .chosen {
+  background-color: white;
+  color: #212730;
+  opacity: 1;
+}
+.container button {
+  background-color: #fb7519;
+  color: #212730;
+  width: 100%;
+  border: #fb7519;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container button:hover {
+  background-color: white;
+}
